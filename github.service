@@ -1,0 +1,10 @@
+[Unit]
+Description="Script to move files from private to publiv repository on github"
+Wants=github.timer
+
+[Service]
+User=ubuntu
+ExecStart=/bin/bash /home/ubuntu/java/revealing.sh
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,9 @@
+[Unit]
+Description="Timer to reveal the answers in 02312"
+
+[Timer]
+OnCalendar=friday *-*-* 12:00:00
+Persistent=true
+
+[Install]
+WantedBy=basic.target
